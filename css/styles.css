@@ -127,7 +127,7 @@ img {
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1158px) {
   .header-logo {
     margin-right: 76px;
   }
@@ -460,11 +460,21 @@ img {
 
 @media only screen and (min-width: 768px) {
   .feature-list {
-    display: flex;
+    row-gap: 72px;
+    column-gap: 24px;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
-    width: calc((100% - 72px) / 4);
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .features-title {
+    margin: 0;
+  }
+
+  .feature-pgrh {
+    flex-basis: auto;
+    width: 264px;
   }
 }
 
@@ -530,6 +540,19 @@ img {
   align-items: center;
   padding: 0px 0px 32px;
   gap: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .teammates-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  .section-four {
+    padding-bottom: 96px;
+  }
 }
 
 .teammate-div {
@@ -615,6 +638,12 @@ img {
   padding: 0px;
   gap: 16px;
   flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-customers {
+    gap: 24px;
+  }
 }
 
 .customers-link {
@@ -801,6 +830,29 @@ img {
 .footer-form-button:focus {
   background-color: #404bbf;
   border-color: #404bbf;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-logo-div {
+    margin-bottom: 72px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    text-align: left;
+    align-items: normal;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-form {
+    flex-direction: row;
+  }
 }
 
 /* Modal Window */
@@ -1153,6 +1205,15 @@ img {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--p-row-title-p-cl);
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio-btn {
+    justify-content: center;
+  }
+
+  .portfolio-list {
+  }
 }
 
 /* Mobile menu Styles */
