@@ -80,6 +80,7 @@ button {
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    margin: 0 auto;
   }
 }
 
@@ -89,6 +90,7 @@ button {
   .container {
     max-width: 1158px;
     padding: 0 15px;
+    margin: 0 auto;
   }
 }
 
@@ -233,6 +235,45 @@ img {
     display: none;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .address-list {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .address {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 320px;
+  }
+
+  .address-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: auto;
+    flex-direction: row;
+  }
+
+  .contacts {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .feature-div-icon {
+    display: block;
+  }
+
+  .section-three {
+    display: block;
+  }
+}
 /* .nav-list {
   display: flex;
   gap: 40px;
@@ -280,11 +321,7 @@ img {
   display: flex;
   gap: 40px;
 } */
-@media only screen and (max-width: 767px) {
-  .address-list {
-    display: none;
-  }
-}
+
 .link {
   text-decoration: none;
 }
@@ -319,40 +356,6 @@ img {
   margin-bottom: 96px;
 }
 
-@media only screen and (min-width: 768px) {
-  .main {
-    background-color: var(--section-bcl);
-    padding: 112px 0;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 768px;
-    margin: 0 auto;
-    margin-bottom: 96px;
-  }
-
-  .main-title {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-    margin-bottom: 36px;
-  }
-
-  .main {
-    text-align: center;
-  }
-}
-
 .main-title {
   font-family: "Roboto";
   font-style: normal;
@@ -363,7 +366,8 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #ffffff;
-  margin-bottom: 72px;
+  margin: 0 auto 72px;
+  max-width: 496px;
 }
 
 .main-title-btn {
@@ -389,6 +393,69 @@ img {
 .main-title-btn:hover,
 .main-title-btn:focus {
   background-color: #404bbf;
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    background-color: var(--section-bcl);
+    padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 768px;
+    margin: 0 auto;
+    margin-bottom: 96px;
+  }
+
+  .main-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin: 0 auto 36px;
+    font-size: 56px;
+    line-height: 1.07;
+    text-transform: none;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .main {
+    background-color: var(--section-bcl);
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .main-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+  }
 }
 
 .feature {
@@ -478,9 +545,79 @@ img {
   }
 }
 
+@media only screen and (min-width: 1158px) {
+  .feature-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .feature-pgrh {
+    width: calc((100% - 72px) / 4);
+    align-items: center;
+  }
+
+  .feature {
+    padding: 120px 0;
+  }
+
+  .features-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--section-bcl);
+  }
+
+  .feature-div-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .feature-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--paragrah-cl);
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .section-three {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .section-three {
+    display: block;
+    margin-bottom: 120px;
+  }
+
+  .section-three-img {
+    display: flex;
+    gap: 24px;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .section-three-title {
+    margin-bottom: 72px;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--title-cl);
   }
 }
 
@@ -552,6 +689,14 @@ img {
 
   .section-four {
     padding-bottom: 96px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .teammates-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: nowrap;
   }
 }
 
@@ -643,6 +788,16 @@ img {
 @media only screen and (min-width: 768px) {
   .section-customers {
     gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .section-customers {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
   }
 }
 
@@ -847,6 +1002,22 @@ img {
 @media only screen and (min-width: 768px) {
   .footer-form {
     flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 120px;
+  }
+
+  .footer-p {
+    font-weight: 400;
+    color: #f4f4fd;
+    max-width: 264px;
   }
 }
 
@@ -1125,7 +1296,7 @@ img {
 
 .portfolio-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0px;
   gap: 48px;
@@ -1133,6 +1304,7 @@ img {
 
 .portfolio-list-info {
   height: 420.8px;
+  width: calc((100% - 24px) / 2);
 }
 
 .portfolio-link-info {
@@ -1208,6 +1380,7 @@ img {
   }
 
   .portfolio-list {
+    gap: 24px;
   }
 }
 
