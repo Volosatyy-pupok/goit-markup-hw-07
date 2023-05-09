@@ -1118,6 +1118,12 @@ img {
   }
 }
 
+@media only screen and (min-width: 1158px) {
+  .modal {
+    top: 80px;
+  }
+}
+
 /* Modal Form */
 
 .modal-form-title {
