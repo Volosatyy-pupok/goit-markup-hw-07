@@ -440,7 +440,7 @@ img {
 
 @media only screen and (min-width: 769px) {
   .main {
-    max-width: none;
+    max-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1004,7 +1004,7 @@ img {
 @media only screen and (min-width: 768px) {
   .footer-div {
     text-align: left;
-    width: 552px;
+    width: 584px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
@@ -1029,8 +1029,17 @@ img {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: baseline;
-    gap: 120px;
     width: auto;
+    gap: 0;
+  }
+
+  @media only screen and (min-width: 1158px) {
+    .footer-logo-div {
+      margin-right: 120px;
+    }
+    .footer-socials-container {
+      margin-right: 80px;
+    }
   }
 
   .footer-p {
